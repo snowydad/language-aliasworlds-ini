@@ -1,0 +1,105 @@
+'scopeName': 'source.ini'
+'fileTypes': [
+  'inf',
+  'desktop',
+  'directory',
+  'description',
+  'ini'
+]
+'name': 'INI'
+'patterns': [
+
+  { #--- Let's add "//" as a comment
+    'begin': '(^[\\s]+)?(?=//)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.ini'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': '//'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.ini'
+        'end': '\\n'
+        'name': 'comment.line.double-slash.ini'
+      }
+    ]
+  }
+
+  {
+    'captures':
+      '1':
+        'name': 'punctuation.definition.entity.ini'
+      '3':
+        'name': 'punctuation.definition.entity.ini'
+    'match': '^(\\s+)?(\\[)(.*?)(\\])'    # --- allow whitespace before []
+    'name': 'entity.name.section.group-title.ini'
+  }
+
+  {
+    'captures':
+      '1':
+        'name': 'keyword.other.definition.ini'
+      '2':
+        'name': 'constant.numeric.ini'
+      '3':
+        'name': 'punctuation.separator.key-value.ini'
+    #'match': '^([\\[\\][\\s*]a-zA-Z0-9_.-[\(\)\.\,\-]]+)\\s*(=|:)' # --- allow ().,- in param name
+    'match': '^(\\s*[a-zA-Z_]+?[^\\s\\(\\)]*?)(\\([^\\s\\(\\)]*?\\))*\\s*(=|:)' # --- start A-z or _
+  }
+
+  {
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.ini'
+    'end': '\''
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.ini'
+    'name': 'string.quoted.single.ini'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.ini'
+      }
+    ]
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.ini'
+    'end': '[!^\\"](?!.*\")'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.ini'
+    'name': 'string.quoted.double.ini'
+  }
+
+  {#link
+    'captures':
+      '1':
+        'name': 'punctuation.definition.entity.ini'
+    'match': '(http://|https://|ftp://|ftps://|sftp://|file://|smb://)(.*?)$'
+    'name': 'markup.underline.link.http.hyperlink.ini'
+  }
+
+  {#link
+    'captures':
+      '1':
+        'name': 'punctuation.definition.entity.ini'
+    'match': '([^\\s]*?)(.com|.net)([^\\s]*?)[\\s]*?$'
+    'name': 'markup.underline.link.http.hyperlink.ini'
+  }
+
+  {#some file file
+    'captures':
+      '1':
+        'name': 'punctuation.definition.entity.ini'
+    'match': '([^\\s]*?)(\\S(\\.ini|\\.curve|\\.png|\\.jpg|\\.ogg))$'
+    'name': 'markup.underline.link.http.hyperlink.ini'
+  }
+
+]

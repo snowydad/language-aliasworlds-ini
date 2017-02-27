@@ -1,0 +1,18 @@
+{
+  "name": "language-aliasworlds-ini",
+  "main": "./lib/language-aliasworlds-ini",
+  "version": "0.0.0",
+  "description": "Syntax support for Aliasworlds flavored INI files in Atom",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-aliasworlds-ini:toggle"
+  },
+  "repository": "https://github.com/atom/language-aliasworlds-ini",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
