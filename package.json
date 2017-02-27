@@ -4,13 +4,17 @@
   "version": "0.0.0",
   "description": "Syntax support for Aliasworlds flavored INI files in Atom",
   "keywords": [
+    "syntax",
+    "grammar",
+    "ini",
+    "aliasworlds"
   ],
-  "activationCommands": {
-    "atom-workspace": "language-aliasworlds-ini:toggle"
-  },
   "repository":{
     "type": "git",
     "url": "https://github.com/snowydad/language-aliasworlds-ini"
+  },
+  "bugs": {
+    "url": "https://github.com/snowydad/language-aliasworlds-ini/issues"
   },
   "license": "MIT",
   "engines": {
