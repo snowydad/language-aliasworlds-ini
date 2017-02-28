@@ -89,17 +89,25 @@
   {#link
     'captures':
       '1':
-        'name': 'punctuation.definition.entity.ini'
-    'match': '([^\\s]*?)(.com|.net)([^\\s]*?)[\\s]*?$'
-    'name': 'markup.underline.link.http.hyperlink.ini'
+        'name': 'markup.underline.link.http.hyperlink.ini'
+      '2':
+        'name': 'markup.underline.link.http.hyperlink.ini'
+      '3':
+        'name': 'none.ini'
+    'match': '([^\\s]*?)(.com|.net)([\\s]*?)$'
+    'name': 'link.ini'
   }
 
   {#some file file
     'captures':
       '1':
-        'name': 'punctuation.definition.entity.ini'
-    'match': '([^\\s]*?)(\\S(\\.ini|\\.curve|\\.png|\\.jpg|\\.ogg))$'
-    'name': 'markup.underline.link.http.hyperlink.ini'
+        'name': 'markup.underline.link.http.hyperlink.ini'
+      '2':
+        'name': 'markup.underline.link.http.hyperlink.ini'
+      '3':
+        'name': 'none.ini'
+    'match': '([^\\s]*?)(\\.ini|\\.curve|\\.png|\\.jpg|\\.ogg)([\\s]*?)$'
+    'name': 'link.ini'
   }
 
 ]
