@@ -110,7 +110,7 @@
         'name': 'markup.link.http.hyperlink.ini'
       '3':
         'name': 'none.ini'
-    'match': '([^\\s]*?)(\\.ini|\\.curve|\\.png|\\.jpg|\\.ogg|\\.rbf|\\.txt)([\\s]*?)$'
+    'match': '([^\\s]*?)(\\.ini|\\.curve|\\.png|\\.jpg|\\.ogg|\\.rbf|\\.txt|\\.spa|\\.spj|\\.xml)([\\s]*?)$'
     'name': 'link.ini'
   }
 
