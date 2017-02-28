@@ -105,12 +105,12 @@
   {#some file file
     'captures':
       '1':
-        'name': 'markup.underline.link.http.hyperlink.ini'
+        'name': 'markup.link.http.hyperlink.ini'
       '2':
-        'name': 'markup.underline.link.http.hyperlink.ini'
+        'name': 'markup.link.http.hyperlink.ini'
       '3':
         'name': 'none.ini'
-    'match': '([^\\s]*?)(\\.ini|\\.curve|\\.png|\\.jpg|\\.ogg)([\\s]*?)$'
+    'match': '([^\\s]*?)(\\.ini|\\.curve|\\.png|\\.jpg|\\.ogg|\\.rbf|\\.txt)([\\s]*?)$'
     'name': 'link.ini'
   }
 
