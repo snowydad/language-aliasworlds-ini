@@ -1,6 +1,5 @@
 {
   "name": "language-aliasworlds-ini",
-  "main": "./lib/language-aliasworlds-ini",
   "version": "0.0.0",
   "description": "Syntax support for Aliasworlds flavored INI files in Atom",
   "keywords": [
