@@ -13,4 +13,4 @@
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/snowydad/language-aliasworlds-ini/master/screenshot.png)
