@@ -45,7 +45,7 @@
         'name': 'constant.numeric.ini'
       '3':
         'name': 'punctuation.separator.key-value.ini'
-    #'match': '^([\\[\\][\\s*]a-zA-Z0-9_.-[\(\)\.\,\-]]+)\\s*(=|:)' # --- allow ().,- in param name
+    # 'match': '^([\\[\\][\\s*]a-zA-Z0-9_.-[\(\)\.\,\-]]+)\\s*(=|:)' # --- allow ().,- in param name
     'match': '^(\\s*[a-zA-Z_]+?[^\\s\\(\\)]*?)(\\([^\\s\\(\\)]*?\\))*\\s*(=|:)' # --- start A-z or _
   }
 
