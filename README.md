@@ -10,3 +10,7 @@
 * http:// (and similar) - links
 * .ini, .png, .jpg etc. - links
 * var(parameter) = value - parameter/tag in the variable name
+
+## Screenshot
+
+![Screenshot](screenshot.png)
